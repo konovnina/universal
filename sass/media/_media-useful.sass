@@ -1,0 +1,31 @@
+@media ( max-width: 992px )
+  .useful
+    &__wrapper
+      padding: 15px 0 15px 0
+      margin-top: 15px
+    &__item
+      min-height: auto
+    &__link
+      margin-right: 5px
+      font-size: 12px
+      font-weight: normal
+    &__image-wrapper
+      max-width: 35px
+      min-width: 35px
+      height: 35px
+@media ( max-width: 767px )
+  .useful
+    &__articles
+      flex-wrap: wrap
+    &__item
+      flex-basis: 50%
+    &__link
+      max-width: 60%
+    &__image-wrapper
+      width: 50%
+@media ( max-width: 576px )
+  .useful
+    &__item
+      flex-basis: 100%
+      &:not(:last-child)
+        border-bottom: 1px solid $text-color
