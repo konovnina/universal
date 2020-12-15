@@ -28,13 +28,13 @@
           <span class="navbar-button__line"></span>
         </button>
         <ul class="navbar__links">
-          <a href="#" class="navbar__link">Статьи</a>
-          <a href="#" class="navbar__link">Новости</a>
-          <a href="#" class="navbar__link">Курсы</a>
-          <a href="#" class="navbar__link">HTML</a>
-          <a href="#" class="navbar__link">CSS</a>
-          <a href="#" class="navbar__link">JavaScript</a>
-          <a href="#" class="navbar__link">Web Design</a>
+          <li class="navbar__item"><a href="#" class="navbar__link">Статьи</a></li>
+          <li class="navbar__item"><a href="#" class="navbar__link">Новости</a></li>
+          <li class="navbar__item"><a href="#" class="navbar__link">Курсы</a></li>
+          <li class="navbar__item"><a href="#" class="navbar__link">HTML</a></li>
+          <li class="navbar__item"><a href="#" class="navbar__link">CSS</a></li>
+          <li class="navbar__item"><a href="#" class="navbar__link">JavaScript</a></li>
+          <li class="navbar__item"><a href="#" class="navbar__link">Web Design</a></li>
         </ul>
         <!-- /.navbar__links -->
 
@@ -54,9 +54,9 @@
     <div class="container main__container">
       <div class="main__content">
         <div class="author main__author">
-          <img src="img/avatar.png" alt="" class="author__avatar">
-          <strong class="author__name">Давид Гуров</strong>
-          <span class="author__job">Разработчик</span>
+          <img src="img/main/author-0.png" alt="" class="author__avatar" id="avatar">
+          <strong class="author__name" id="main-author">Давид Гуров</strong>
+          <span class="author__job" id="job">Разработчик</span>
         </div>
         <!-- /.main__author -->
         <div class="article-heading main__article-heading">
@@ -73,63 +73,67 @@
       <div class="recommend main__tabs">
         <h5 class="recommend__title">Рекомендуем</h5>
         <div class="recommend__tabs">
+
           <div class="recommend__tab">
             <span class="topic-tag">css</span>
             <span class="recommend__article-title">Как использовать CSS float после того, как вышел Flexbox</span>
+
+            <div class="hidden author">София Масленникова</div>
+            <div class="hidden job">Тестировщик</div>
+            <div class="hidden avatar">img/main/author-1.png</div>
+            <div class="hidden bg">url('../img/main/main-img-1.jpg')</div>
           </div>
+
           <div class="recommend__tab">
             <span class="topic-tag">javascript</span>
             <span class="recommend__article-title">На каком стандарте писать скрипты, если я фрилансер</span>
+
+            <div class="hidden author">Евгений Воробьев</div>
+            <div class="hidden job">Frontend разработчик</div>
+            <div class="hidden avatar">img/main/author-2.jpg</div>
+            <div class="hidden bg">url('../img/main/main-img-2.jpg')</div>
           </div>
+
           <div class="recommend__tab">
             <span class="topic-tag">html</span>
             <span class="recommend__article-title">Правильно вставляем картинку на сайт для Retina дисплея</span>
+
+            <div class="hidden author">Фёдор Жданов</div>
+            <div class="hidden job">Системный архитектор</div>
+            <div class="hidden avatar">img/main/author-3.jpg</div>
+            <div class="hidden bg">url('../img/main/main-img-3.jpg')</div>
           </div>
+
           <div class="recommend__tab">
             <span class="topic-tag">Web design</span>
             <span class="recommend__article-title">ТОП-10 плагинов для Figma</span>
+
+            <div class="hidden author">Екатерина Андрианова</div>
+            <div class="hidden job">UX/UI дизайнер</div>
+            <div class="hidden avatar">img/main/author-4.jpg</div>
+            <div class="hidden bg">url('../img/main/main-img-4.jpg')</div>
+
           </div>
-          <div class="recommend__tab">
+
+          <div class="recommend__tab recommend__tab--last">
             <span class="topic-tag">CSS</span>
             <span class="recommend__article-title">Возможности CSS Grid Layout , которые уже можно применять</span>
+
+            <div class="hidden author">Ангелина Голованова</div>
+            <div class="hidden job">Frontend разработчик</div>
+            <div class="hidden avatar">img/main/author-5.jpg</div>
+            <div class="hidden bg">url('../img/main/main-img-5.jpg')</div>
+
           </div>
-        </div>
-
-        <div class="recommend__links">
-          <a href="#" class="recommend__link">
-            <span class="topic-tag">css</span>
-            <span class="recommend__article-title">Как использовать CSS float после того, как вышел Flexbox</span>
-          </a>
-
-          <a href="#" class="recommend__link">
-            <span class="topic-tag">javascript</span>
-            <span class="recommend__article-title">На каком стандарте писать скрипты, если я фрилансер</span>
-          </a>
-
-          <a href="#" class="recommend__link">
-            <span class="topic-tag">html</span>
-            <span class="recommend__article-title">Правильно вставляем картинку на сайт для Retina дисплея</span>
-          </a>
-
-          <a href="#" class="recommend__link">
-            <span class="topic-tag">Web design</span>
-            <span class="recommend__article-title">ТОП-10 плагинов для Figma</span>
-
-          </a>
-
-          <a href="#" class="recommend__link">
-            <span class="topic-tag">CSS</span>
-            <span class="recommend__article-title">Возможности CSS Grid Layout , которые уже можно применять</span>
-          </a>
         </div>
       </div>
     </div>
-    </div>
+
     <!-- /.container -->
   </section>
   <!-- /.main -->
 
-  <section class="useful">
+  <div class="useful">
     <div class="container useful__wrapper">
       <div class="useful__articles">
         <div class="useful__item">
@@ -158,7 +162,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
   <!-- /.useful -->
 
   <section class="popular">

@@ -12,7 +12,7 @@
     flex-direction: column
     justify-content: space-between
     max-width: 877px
-    background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/main-img.jpg')
+    background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/main/main-img-0.jpg')
     background-size: cover
   &__tabs
     flex-basis: 263px
@@ -94,6 +94,8 @@
         color: $color
     &--active
       background-color: #F5F5F5
+    &--last
+      height: 110px
   &__link
     @each $tab, $color in $tabs-colors
       &:#{$tab}
