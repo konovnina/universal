@@ -1,0 +1,65 @@
+.header
+  background-color: $color-dark
+  &--mb-3
+    margin-bottom: 30px
+.navbar
+  padding: 15px 0
+  background-color: $color-dark
+  display: flex
+  justify-content: space-between
+  align-items: center
+.logo
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 163px
+  &__title
+    color: $color-light
+    font-family: 'Roboto slab'
+    font-size: 24px
+    transition: 0.5s
+    &:hover
+      color: $button-primary-color
+.navbar
+  &__links
+    width: 531px
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__link
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    color: $color-light
+    transition: 0.2s
+    &:hover
+      color: $button-primary-color
+  &__button
+    display: none
+.search
+  background-color: #656B70
+  display: flex
+  justify-content: space-between
+  padding: 9px 25px
+  border-radius: 10px
+  &__input
+    width: 173px
+    margin-right: 20px
+    background-color: transparent
+    color: $color-light
+    cursor: text
+    &::placeholder
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: #939699
+  &__button
+    background-color: transparent
+    padding: 0
+
+.substrate
+  background-color: $color-dark
+  width: 100vw
+  height: 545px
+  position: absolute
+  z-index: -1

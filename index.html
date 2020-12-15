@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universal</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/lato.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="header header--mb-3">
+    <div class="substrate"></div>
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo header__logo">
+          <img src="img/logo.svg " alt="Icon: logo" class="logo__image">
+          <h1 class="logo__title">Universal</h1>
+        </a>
+        <!-- /.logo -->
+        <button class="navbar-button navbar__button">
+          <span class="navbar-button__line"></span>
+          <span class="navbar-button__line"></span>
+          <span class="navbar-button__line"></span>
+        </button>
+        <ul class="navbar__links">
+          <a href="#" class="navbar__link">Статьи</a>
+          <a href="#" class="navbar__link">Новости</a>
+          <a href="#" class="navbar__link">Курсы</a>
+          <a href="#" class="navbar__link">HTML</a>
+          <a href="#" class="navbar__link">CSS</a>
+          <a href="#" class="navbar__link">JavaScript</a>
+          <a href="#" class="navbar__link">Web Design</a>
+        </ul>
+        <!-- /.navbar__links -->
+
+        <form action="#" class="search navbar__search navbar__search--mobile_hidden">
+          <input type="text" class="search__input" placeholder="Поиск">
+          <button class="search__button">
+            <img src="img/search.svg" alt="Icon: Search">
+          </button>
+        </form>
+      </nav>
+    </div>
+    <!-- /.container -->
+  </header>
+  <!-- /.header -->
+
+  <section class="main">
+    <div class="container main__container">
+      <div class="main__content">
+        <div class="author main__author">
+          <img src="img/avatar.png" alt="" class="author__avatar">
+          <strong class="author__name">Давид Гуров</strong>
+          <span class="author__job">Разработчик</span>
+        </div>
+        <!-- /.main__author -->
+        <div class="article-heading main__article-heading">
+          <span class="topic-tag article-heading__tag">Javascript</span>
+          <h2 class="article-heading__title">Расширение Chrome защищает от атак</h2>
+          <button class="button article-heading__button">
+            Читать далее&nbsp;&nbsp;
+            <img src="img/right-arrow.svg" alt="">
+          </button>
+        </div>
+        <!-- /.main__article-heading -->
+      </div>
+      <!-- /.main__content -->
+      <div class="recommend main__tabs">
+        <h5 class="recommend__title">Рекомендуем</h5>
+        <div class="recommend__tabs">
+          <div class="recommend__tab">
+            <span class="topic-tag">css</span>
+            <span class="recommend__article-title">Как использовать CSS float после того, как вышел Flexbox</span>
+          </div>
+          <div class="recommend__tab">
+            <span class="topic-tag">javascript</span>
+            <span class="recommend__article-title">На каком стандарте писать скрипты, если я фрилансер</span>
+          </div>
+          <div class="recommend__tab">
+            <span class="topic-tag">html</span>
+            <span class="recommend__article-title">Правильно вставляем картинку на сайт для Retina дисплея</span>
+          </div>
+          <div class="recommend__tab">
+            <span class="topic-tag">Web design</span>
+            <span class="recommend__article-title">ТОП-10 плагинов для Figma</span>
+          </div>
+          <div class="recommend__tab">
+            <span class="topic-tag">CSS</span>
+            <span class="recommend__article-title">Возможности CSS Grid Layout , которые уже можно применять</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.main -->
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

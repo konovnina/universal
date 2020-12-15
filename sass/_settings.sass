@@ -1,0 +1,40 @@
+*
+  font-family: 'Lato'
+  box-sizing: border-box
+
+body
+  margin: 0
+  padding: 0
+  background-color: $color-lightgrey
+
+h1, h2, h3, h4, h5, p, ul
+  margin: 0
+  padding: 0
+
+a
+  text-decoration: none
+  color: inherit
+  cursor: pointer
+
+.container
+  width: 1140px
+  margin: auto
+
+button, input, textarea
+  outline: none
+  border: none
+  cursor: pointer
+
+.button
+  display: flex
+  align-items: center
+  padding: 10px 20px
+  border-radius: 20px
+  background-color: $button-primary-color
+  font-weight: 900
+  font-size: 14px
+  line-height: 20px
+  color: $color-light
+  transition: 0.2s
+  &:hover
+    background-color: lighten($button-primary-color, 10%)
