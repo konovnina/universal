@@ -65,6 +65,8 @@
     color: $color-light
 .recommend
   background-color: $color-light
+  &__links
+    display: none
   &__title
     padding: 20px 25px
     font-weight: 900
@@ -85,6 +87,10 @@
     height: 100px
     padding: 17px 25px 19px 25px
     transition: 0.3s
+    @each $tab, $color in $tabs-colors
+      &:#{$tab}
+        color: $color
+  &__link
     @each $tab, $color in $tabs-colors
       &:#{$tab}
         color: $color

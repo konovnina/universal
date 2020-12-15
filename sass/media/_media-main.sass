@@ -1,0 +1,77 @@
+@media ( max-width: 992px )
+  .article-heading
+    &__title
+      font-size: 36px
+      line-height: 40px
+      width: 80%
+@media ( max-width: 767px )
+  .main
+    &__container
+      flex-direction: column
+      height: auto
+    &__content
+      padding: 30px 30px 50px 30px
+      min-height: 300px
+    &__article-heading
+  .article-heading
+    &__tag
+      margin-bottom: 10px
+    &__title
+      width: 100%
+      font-size: 24px
+      line-height: 30px
+      margin-bottom: 10px
+  .author
+    justify-content: center
+    &__avatar
+      width: 35px
+      height: 35px
+      flex-basis: auto
+  .recommend
+    &__tabs
+      height: 200px
+      overflow-y: scroll
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none
+      &::-webkit-scrollbar
+        display: none
+    &__title
+      padding: 10px 20px
+      font-size: 12px
+    &__tab
+      height: auto
+      padding: 10px 20px
+@media ( max-width: 576px )
+  .main
+    &__tabs
+      flex-basis: auto
+  .article-heading
+    &__tag
+      margin-bottom: 0
+  .recommend
+    &__tabs
+      display: none
+    &__links
+      display: flex
+      flex-direction: column
+      height: 150px
+      overflow-y: scroll
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none
+      &::-webkit-scrollbar
+        display: none
+    &__article-title
+      margin-top: 0px
+    &__link
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      border-top: 1px solid #D9DADB
+      cursor: pointer
+      min-height: 50px
+      padding: 5px 20px
+    &__article-title
+      font-size: 12px
+      line-height: 15px
+  .topic-tag
+    font-size: 10px
