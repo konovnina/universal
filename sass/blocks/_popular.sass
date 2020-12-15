@@ -1,0 +1,257 @@
+.popular
+  margin-bottom: 60px
+  &-grid
+    display: grid
+    gap: 30px
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: repeat(4, minmax(170px, min-content))
+    &__item
+      background-color: $color-dark
+      border-radius: 10px
+      padding: 25px 25px 30px 25px
+      overflow: hidden
+      background-color: $color-light
+      transition: 0.3s
+  &__dream
+    grid-column: 1/3
+    grid-row: 1/3
+    background: url('../img/popular/car.png') $color-light
+    background-repeat: no-repeat
+    background-position: 100% 20%
+  &__portfolio
+    grid-column: 3/4
+    grid-row: 1/3
+    background-image: url('../img/popular/bulb.jpg')
+    background-size: cover
+    background-position-x: 50%
+
+  &__js
+    padding: 0
+    grid-column: 1/2
+    grid-row: 3/5
+    display: flex
+    flex-direction: column
+    &-wrapper
+      padding: 15px 25px 30px 25px
+    &-picture
+      flex: 1
+      background: url('../img/popular/laptop.png')
+      background-position-y: 50%
+      background-size: cover
+  &__reference,
+  &__clients,
+  &__stress,
+  &__free
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    transition: 0.3s
+  &__checklist
+    grid-row: 1/2
+  &__tags
+    grid-column: 4/5
+    grid-row: 2/4
+  &__social
+  &__title
+    font-family: 'Roboto slab'
+    color: $color-dark
+    font-weight: bold
+    font-size: 16px
+    line-height: 25px
+    &--main
+      transition: 0.3s
+      font-size: 25px
+      line-height: 30px
+      margin-top: 20px
+      margin-bottom: 25px
+  &__description
+    padding-top: 5px
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: $text-color
+    &--main
+      padding: 0
+  &__date
+    color: #939699
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+.download
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  background: url('../img/popular/File.svg') #3BBDC4
+  background-repeat: no-repeat
+  background-position: 90% 25%
+  padding: 0
+  &__content-wrapper
+    padding: 24px 22px 19px 25px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    flex: 1
+  &__title
+    color: $color-light
+    font-family: Roboto Slab
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 25px
+  &__description
+    color: #C1F4F5
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+  &__button
+    width: 100%
+    padding: 12px 0
+    border-top: 1px solid #96E2E3
+    background-color: #3BBDC4
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    color: $color-light
+  &__icon
+    margin-right: 10px
+.social
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  padding: 30px 25px 40px 25px
+  &__title
+    font-size: 20px
+  &__buttons
+    display: flex
+    width: 100%
+    justify-content: space-around
+  &__button
+    display: block
+    max-width: 50px
+    min-width: 50px
+    height: 50px
+    border-radius: 50%
+    &--fb
+      background: url('../img/popular/Facebook.svg') no-repeat 50% 50%
+      background-color: #4267B2
+    &--twitter
+      background: url('../img/popular/Twitter.svg') no-repeat 50% 50%
+      background-color: #1DA1F2
+    &--yt
+      background: url('../img/popular/YouTube.svg') no-repeat 50% 50%
+      background-color: #FF0000
+.tags
+  padding: 0
+  &__header
+    padding: 20px 25px
+    border-bottom: 1px solid #D9DADB
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    text-transform: uppercase
+  &__wrapper
+    padding: 25px 15px 30px 25px
+    display: flex
+    height: 310px
+    flex-wrap: wrap
+    align-content: space-between
+    justify-content: flex-start
+  &__item
+    padding: 5px 15px
+    margin-right: 10px
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    border: 1px solid #D9DADB
+    border-radius: 5px
+    color: $color-dark
+.badge
+  background-color: $badge
+  padding: 5px 12px
+  border-radius: 3px
+  font-weight: normal
+  font-size: 12px
+  line-height: 15px
+  color: $color-light
+.portfolio
+  padding: 0
+  height: 100%
+  &__wrapper
+    padding: 19px 0px 25px 25px
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-start
+  &__info
+    width: 100%
+  &__tag
+    color: #E7D9FF
+  &__title
+    width: 90%
+    margin-top: 23px
+    margin-bottom: 27px
+    font-weight: bold
+    font-size: 16px
+    line-height: 25px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    color: $color-light
+    transition: 0.3s
+  &__author
+    justify-content: flex-start
+.author
+  &__name
+    &--dark
+      color: $color-dark
+      font-weight: 900
+      margin-right: 5px
+      opacity: 1
+  &__avatar
+    &--small
+      min-width: 30px
+      max-width: 30px
+      height: 30px
+      flex: 1
+  &__info
+    height: 15px
+    min-width: 157px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: rgba(255, 255, 255, 0.4)
+  &__comments, &__likes
+    display: flex
+    &--dark
+      color: #939699
+      font-size: 12px
+  &__icon
+    margin-right: 6px
+  &--horizontal
+    width: auto
+    box-sizing: content-box
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: flex-start
+    align-items: center
+    padding: 7px 35px
+  &__message
+    margin-right: 10px
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: $text-color
+.dream
+  padding: 0
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  &__wrapper
+    padding: 30px 0 0 35px
+    box-sizing: content-box
+    max-width: 230px
+    flex: 1

@@ -1,0 +1,138 @@
+@media ( max-width: 1200px )
+  .popular
+    &-grid
+      gap: 20px
+    &__dream
+      background-size: 50%
+  .tags
+    &__wrapper
+      padding: 15px
+    &__item
+      padding: 3px 10px
+  .social
+    justify-content: center
+    &__title
+      margin-bottom: 10px
+  .portfolio
+    &__author
+      width: 100%
+  .author
+    &__info
+      min-height: 20px
+      min-width: 100px
+      max-width: 100px
+      flex-wrap: wrap
+
+@media ( max-width: 992px )
+  .popular
+    &-grid
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: repeat(7, minmax(170px, min-content))  120px
+      gap: 15px
+    &__dream
+      grid-column: 1 / 3
+      grid-row: 1 / 3
+      background-size: auto
+    &__js
+      grid-column: 1 /2
+      grid-row: 3 / 5
+    &__portfolio
+      grid-column: 2 / 3
+      grid-row: 3/5
+    &__reference
+      grid-column: 1 / 2
+      grid-row: 5/6
+    &__clients
+      grid-column: 2 / 3
+      grid-row: 5/6
+    &__stress
+      grid-column: 1 / 2
+      grid-row: 6/7
+    &__free
+      grid-column: 2 / 3
+      grid-row: 6/7
+    &__tags
+      grid-column: 1/2
+      grid-row: 7/9
+    &__checklist
+      grid-column: 2/3
+      grid-row: 7/8
+    &__social
+      grid-column: 2/3
+      grid-row: 8/9
+  .social
+    &__buttons
+      justify-content: space-around
+      width: 60%
+  .tags
+    &__wrapper
+      height: 230px
+      align-content: space-evenly
+  .dream
+    &__wrapper
+      max-width: 50%
+  .author
+    &__info
+      height: auto
+      min-width: 150px
+      flex-wrap: nowrap
+    &--horizontal
+      justify-content: flex-start
+@media ( max-width: 576px )
+  .popular
+    &-grid
+      grid-template-columns: 1fr
+      grid-template-rows: repeat(16, minmax(130px, min-content))
+    &__dream
+      grid-column: 1 / 2
+      grid-row: 1 / 3
+    &__js
+      grid-column: 1 /2
+      grid-row: 3 / 5
+    &__portfolio
+      grid-column: 1 / 2
+      grid-row: 5/7
+      background-position-y: 50%
+    &__reference
+      grid-column: 1/2
+      grid-row: 7/8
+    &__clients
+      grid-column: 1/2
+      grid-row: 8/9
+    &__stress
+      grid-column: 1/2
+      grid-row: 9/10
+    &__free
+      grid-column: 1/2
+      grid-row: 10/11
+    &__tags
+      grid-column: 1/2
+      grid-row: 11/12
+    &__checklist
+      grid-column: 1/2
+      grid-row: 12/13
+    &__social
+      grid-column: 1/2
+      grid-row: 13/14
+  .author
+    &--horizontal
+      max-width: 100%
+  .dream
+    background-size: 50%
+    &__wrapper
+      padding-bottom: 30px
+
+@media ( max-width: 460px )
+  .dream
+    background-size: 30%
+    background-position-y: 50%
+    &__wrapper
+      max-width: 75%
+      padding-top: 20px
+  .author
+    &--horizontal
+      display: none
+  .social
+    padding: 20px 15px 20px 15px
+  .tags
+    &__wrapper

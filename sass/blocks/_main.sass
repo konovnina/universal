@@ -47,6 +47,8 @@
   font-size: 12px
   line-height: 15px
   text-transform: uppercase
+  &--articles
+    color: #6E99AE
 
 .article-heading
   display: flex
@@ -90,15 +92,13 @@
     @each $tab, $color in $tabs-colors
       &:#{$tab}
         color: $color
+    &--active
+      background-color: #F5F5F5
   &__link
     @each $tab, $color in $tabs-colors
       &:#{$tab}
         color: $color
 
-    &--active
-      background-color: #F5F5F5
-    &:hover
-      background-color: #E5E5E5
   &__article-title
     color: $text-color
     margin-top: 8px
