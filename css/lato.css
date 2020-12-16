@@ -7,6 +7,13 @@
 
 @font-face {
     font-family: 'Lato';
+    src: local('Lato Heavy Italic'), local('Lato-HeavyItalic'), url('../fonts/latoheavyitalic.woff2') format('woff2'), url('../fonts/latoheavyitalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
     src: local('Lato Black'), local('Lato-Black'), url('../fonts/latoblack.woff2') format('woff2'), url('../fonts/latoblack.woff') format('woff');
     font-weight: 900;
     font-style: normal;

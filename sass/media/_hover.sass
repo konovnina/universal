@@ -44,3 +44,27 @@
       transition: 0.3s
       &:hover
         background-color: rgba(61,196,126,0.3)
+  // .bookmark
+  //   transition: 0.2s
+  //   &:hover
+  //     background: url('../img/Bookmark.svg')
+  //   &--active
+  //     &:hover
+  //       background: url('../img/Bookmark-inactive.svg')
+
+  .main-news
+    &__item
+      &:hover
+        & .main-news__title
+          color: $button-primary-color
+    &__bookmark
+      &:hover
+        & ~ .main-news__title
+          color: $color-dark
+
+  .recent
+    &__button
+      transition: 0.3s
+      &:hover
+        background-color: #3BBDC4
+        color: $color-light

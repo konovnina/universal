@@ -5,16 +5,122 @@
     align-items: flex-start
   &__main
     background-color: $color-light
+    width: 75%
+    overflow: hidden
+    border-radius: 10px
   &__recent
     background-color: $color-light
+    width: 23%
+    overflow: hidden
+    border-radius: 10px
 
 .main-news
   max-width: 848px
-  border: 1px solid #000
+  padding-left: 25px
+  padding-right: 25px
   &__item
+    padding-top: 25px
+    padding-bottom: 24px
+    display: flex
   &__image-wrapper
+    flex-basis: 100%
     background-color: $color-dark
+    max-width: 336px
+    max-height: 195px
+    margin-right: 25px
+    overflow: hidden
   &__image
+    width: 100%
+    min-height: 100%
+    object-fit: cover
+  &__content
+    padding-top: 5px
+    width: 437px
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &__title
+    margin: 15px 0 10px 0
+    font-family: Roboto Slab
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 25px
+    color: $color-dark
+    transition: 0.3s
+  &__text
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    margin-bottom: 20px
+    color: $text-color
+  &__footer
+    margin-bottom: 5px
+    max-width: 155px
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: #939699
+    display: inline-grid
+    gap: 11px
+    grid-template-columns: repeat(3, max-content)
+  &__comments, &__likes
+    display: inline-flex
+    align-items: center
+  &__bookmark
+    position: absolute
+    top: 0
+    right: 0
 .recent
   max-width: 263px
-  border: 1px solid #000
+  &__top
+    padding: 20px 25px 19px 25px
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+  &__items-wrapper
+    padding-left: 25px
+    padding-right: 25px
+  &__item
+    padding-top: 17px
+    padding-bottom: 17px
+    position: relative
+    display: flex
+  &__img
+    width: 60px
+    height: 60px
+  &__info
+    margin-left: 10px
+  &__title
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: $text-color
+  &__time
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: #939699
+  &__number
+    position: absolute
+    right: 0
+    font-size: 70px
+    line-height: 50px
+    font-family: 'Lato'
+    font-weight: 800
+    font-style: italic
+    color: $color-dark
+    opacity: 0.08
+  &__button
+    width: 100%
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    background-color: inherit
+    color: $color-dark
+    text-align: center
+    padding-top: 11px
+    padding-bottom: 14px

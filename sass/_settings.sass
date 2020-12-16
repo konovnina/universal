@@ -7,7 +7,7 @@ body
   padding: 0
   background-color: $color-lightgrey
 
-h1, h2, h3, h4, h5, p, ul, li
+h1, h2, h3, h4, h5, h6, p, ul, li
   margin: 0
   padding: 0
 
@@ -49,3 +49,31 @@ button, input, textarea
   width: 100%
   height: 1px
   background-color: #D9DADB
+
+.icon
+  margin-right: 6px
+
+.bookmark
+  z-index: 10
+  width: 20px
+  height: 20px
+  background: url('../img/Bookmark-inactive.svg')
+  &--active
+    background: url('../img/Bookmark.svg')
+
+.topic-tag
+  font-weight: 900
+  font-size: 12px
+  line-height: 15px
+  letter-spacing: 0.5px
+  text-transform: uppercase
+  &--articles
+    color: #6E99AE
+  &--news
+    color: #4592FF
+  &--opinions
+    color: #3BBDC4
+  &--hot
+    color: #FF4F52
+  &--compilations
+    color: #AC8EE3

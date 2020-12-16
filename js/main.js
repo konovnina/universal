@@ -43,4 +43,10 @@ $(document).ready(function () {
     $(".navbar__links").toggleClass('navbar__links--mobile-visible');
 
   });
+
+  var bookmarkButton = $(".bookmark");
+  bookmarkButton.on('click', function () {
+    $(this).toggleClass('bookmark--active');
+
+  });
 });
