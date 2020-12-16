@@ -32,7 +32,7 @@ $(document).ready(function () {
     author.html(newAuthor);
     job.html(newJob);
     avatar.attr('src', newAvatar);
-    container.css('background-image', newBG);
+    container.css('background', "linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), " + newBG);
     tag.css('color', newColor);
 
   });
