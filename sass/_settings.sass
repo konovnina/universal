@@ -44,7 +44,23 @@ button, input, textarea
   transition: 0.2s
   &:hover
     background-color: lighten($button-primary-color, 10%)
-
+  &__number
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: #C5E4FC
+    margin-left: 8px
+  &__left-icon
+    margin-right: 8px
+.badge
+  align-self: flex-start
+  background-color: $badge
+  padding: 5px 12px
+  border-radius: 3px
+  font-weight: normal
+  font-size: 12px
+  line-height: 15px
+  color: $color-light
 .separator
   width: 100%
   height: 1px
@@ -77,3 +93,5 @@ button, input, textarea
     color: #FF4F52
   &--compilations
     color: #AC8EE3
+  &--career
+    color: #6E99AE

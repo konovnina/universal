@@ -166,14 +166,6 @@
     border: 1px solid #D9DADB
     border-radius: 5px
     color: $color-dark
-.badge
-  background-color: $badge
-  padding: 5px 12px
-  border-radius: 3px
-  font-weight: normal
-  font-size: 12px
-  line-height: 15px
-  color: $color-light
 .portfolio
   padding: 0
   height: 100%
@@ -255,3 +247,32 @@
     box-sizing: content-box
     max-width: 230px
     flex: 1
+.tile
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  transition: 0.3s
+  background-color: $color-dark
+  border-radius: 10px
+  padding: 25px 25px 30px 25px
+  overflow: hidden
+  background-color: $color-light
+  transition: 0.3s
+  &__title
+    font-family: 'Roboto slab'
+    color: $color-dark
+    font-weight: bold
+    font-size: 16px
+    line-height: 25px
+  &__description
+    padding-top: 5px
+    padding-bottom: 10px
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: $text-color
+  &__date
+    color: #939699
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px

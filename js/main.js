@@ -49,4 +49,21 @@ $(document).ready(function () {
     $(this).toggleClass('bookmark--active');
 
   });
+
+
+  //Slider
+  var mySwiper = new Swiper('.articles-slider', {
+    // Optional parameters
+    direction: 'horizontal',
+    speed: 900,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+    },
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+  });
 });

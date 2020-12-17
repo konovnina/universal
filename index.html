@@ -7,6 +7,7 @@
   <title>Universal</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/lato.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
 
@@ -222,7 +223,7 @@
           </div>
         </a>
         <!-- /.popular-grid__item -->
-        <a class="popular-grid__item popular__reference">
+        <a class="tile popular-grid__item popular__reference">
           <div class="popular__content-wrapper">
             <h5 class="popular__title">Удачные референсы</h5>
             <p class="popular__description">Как выбрать подходящие исходники, если вы ищите идею для интерфейса</p>
@@ -230,7 +231,7 @@
           <span class="popular__date">15 октября</span>
         </a>
         <!-- /.popular-grid__item -->
-        <a class="popular-grid__item popular__clients">
+        <a class="tile popular-grid__item popular__clients">
           <div class="popular__content-wrapper">
             <h5 class="popular__title">Заказчики — мудаки?</h5>
             <p class="popular__description">Как защититься от бесконечных правок на этапе сдачи проекта</p>
@@ -238,7 +239,7 @@
           <span class="popular__date">20 октября</span>
         </a>
         <!-- /.popular-grid__item -->
-        <a class="popular-grid__item popular__stress">
+        <a class="tile popular-grid__item popular__stress">
           <div class="popular__content-wrapper">
             <h5 class="popular__title">Работа без стресса — это...</h5>
             <p class="popular__description">Обустройте свое рабочее место так, чтобы не испытывать раздражение от
@@ -247,7 +248,7 @@
           <span class="popular__date">26 октября</span>
         </a>
         <!-- /.popular-grid__item -->
-        <a class="popular-grid__item popular__free">
+        <a class="tile popular-grid__item popular__free">
           <div class="popular__content-wrapper">
             <h5 class="popular__title">Бесплатные методы...</h5>
             <p class="popular__description">Как не платить за софт, если у вас есть студенческий билет высшего учебного
@@ -328,7 +329,7 @@
           </div>
 
           <div class="main-news__content">
-            <button class="bookmark main-news__bookmark"></button>
+            <span class="bookmark main-news__bookmark"></span>
             <span class="topic-tag topic-tag--news">Новости</span>
             <h3 class="main-news__title">
               Новый налоговый режим для фрилансеров — налог на проф. доход
@@ -358,7 +359,7 @@
           </div>
 
           <div class="main-news__content">
-            <button class="bookmark bookmark--active main-news__bookmark"></button>
+            <span class="bookmark bookmark--active main-news__bookmark"></span>
             <span class="topic-tag topic-tag--opinions">Мнения</span>
             <h3 class="main-news__title">
               Платные курсы — это не быстрый способ выйти на нужный уровень
@@ -388,7 +389,7 @@
           </div>
 
           <div class="main-news__content">
-            <button class="bookmark main-news__bookmark"></button>
+            <span class="bookmark main-news__bookmark"></span>
             <span class="topic-tag topic-tag--hot">Горячее</span>
             <h3 class="main-news__title">
               Из-за ограничений стали недоступны серверы Telegram. К чему это может...
@@ -418,7 +419,7 @@
           </div>
 
           <div class="main-news__content">
-            <button class="bookmark main-news__bookmark"></button>
+            <span class="bookmark main-news__bookmark"></span>
             <span class="topic-tag topic-tag--opinions">Мнения</span>
             <h3 class="main-news__title">
               В вашем портфолио могут быть фейковые проекты, если вы сделали...
@@ -448,7 +449,7 @@
           </div>
 
           <div class="main-news__content">
-            <button class="bookmark main-news__bookmark"></button>
+            <span class="bookmark main-news__bookmark"></span>
             <span class="topic-tag topic-tag--hot">Горячее</span>
             <h3 class="main-news__title">
               Список стран, куда можно улететь
@@ -478,7 +479,7 @@
           </div>
 
           <div class="main-news__content">
-            <button class="bookmark main-news__bookmark"></button>
+            <span class="bookmark main-news__bookmark"></span>
             <span class="topic-tag topic-tag--compilations">Подборки</span>
             <h3 class="main-news__title">
               Список Youtube каналов для тех, кто только начинает изучать разработку
@@ -606,8 +607,92 @@
   </section>
   <!-- /.news -->
 
+  <section class="articles">
+    <div class="container">
+      <div class="articles-grid">
+        <div class="swiper-container articles-slider articles__left-wrapper">
+
+          <!-- Slider -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide articles-slider__item"
+              style="background: url('img/articles/slide-1.jpg') 50% 50%; background-size: cover">
+            </div>
+            <div class="swiper-slide articles-slider__item"
+              style="background: url('img/articles/slide-2.jpg') 50% 50%; background-size: cover">
+            </div>
+            <div class="swiper-slide articles-slider__item"
+              style="background: url('img/articles/slide-3.jpg') 50% 50%; background-size: cover">
+            </div>
+            <div class="swiper-slide articles-slider__item"
+              style="background: url('img/articles/slide-4.jpg') 50% 50%; background-size: cover">
+            </div>
+            <div class="swiper-slide articles-slider__item"
+              style="background: url('img/articles/slide-5.jpg') 50% 50%; background-size: cover">
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+          <!-- Slider | END  -->
+
+
+          <div class="tile articles__primary">
+            <span class="badge articles__badge">Горячее</span>
+            <div class="author author--vertical articles__author">
+              <img src="img/articles/author.png" alt="" class="author__avatar author__avatar--vertical">
+              <strong class="author__name">Оксана Пушкина</strong>
+              <span class="author__job">Фотограф</span>
+            </div>
+            <h2 class="articles__main-title">Выбор читателей: где удобнее работать фрилансеру</h2>
+            <button class="button">
+              <img src="img/articles/Images.svg" alt="" class="button__left-icon">
+              Смотреть фото
+              <span class="button__number">26</span>
+            </button>
+          </div>
+          <!-- /.articles__item -->
+        </div>
+        <!-- /.articles__left-wrapper -->
+        <div class="articles-right-wrapper">
+          <div class="tile articles__item articles__secondary">
+            <div class="articles__secondary-wrapper">
+              <span class="topic-tag topic-tag--career">Карьера</span>
+              <h3 class="articles__title">Вопросы на собеседовании для джуна</h3>
+              <p class="articles__description">Каверзные и не очень вопросы, которых боятся новички, когда идут на
+                собеседование</p>
+              <button class="button">
+                Читать далее&nbsp;&nbsp;
+                <img src="img/right-arrow.svg" alt="">
+              </button>
+            </div>
+          </div>
+          <!-- /.articles__item -->
+
+          <a class="tile articles__item">
+            <h5 class="tile__title ">Зарядка для глаз</h5>
+            <p class="tile__description">Эти несколько упражнений помогут сохранить зрение. Можно делать их даже если...
+            </p>
+            <span class="tile__date">15 октября</span>
+          </a>
+          <!-- /.articles__item -->
+
+          <a class="tile articles__item">
+            <h5 class="tile__title">Топ плагинов jQuery</h5>
+            <p class="tile__description">Какие плагины помогут быстро создать галерею, выпадающие списки или окна</p>
+            <span class="tile__date">14 октября</span>
+          </a>
+          <!-- /.articles__item -->
+        </div>
+        <!-- /.articles-right-wrapper -->
+      </div>
+      <!-- /.articles-grid -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.articles -->
+
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/parallax.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
