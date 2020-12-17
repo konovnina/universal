@@ -1,0 +1,58 @@
+@media ( max-width: 1200px )
+  .recent
+    &__img
+      width: 30px
+      height: 30px
+      margin-top: 5px
+  .main-news
+    &__content
+      width: auto
+      max-width: 80%
+    &__image-wrapper
+      max-width: 250px
+
+@media ( max-width: 992px )
+  .news
+    &__container
+      flex-direction: column
+    &__main
+      width: 100%
+      max-width: 100%
+      margin-bottom: 30px
+    &__recent
+      width: 100%
+      max-width: 100%
+  .main-news
+    &__content
+      width: auto
+      max-width: 80%
+    &__image-wrapper
+      max-width: 200px
+  .recent
+    &__items-wrapper
+      display: grid
+      grid-template-columns: repeat(3, 1fr)
+      gap: 25px
+    &__item
+    &__img
+      width: 60px
+      height: 60px
+@media ( max-width: 767px )
+  .main-news
+    &__content
+      width: auto
+      max-width: 80%
+    &__image-wrapper
+      max-width: 150px
+  .recent
+    &__items-wrapper
+      grid-template-columns: repeat(2, 1fr)
+@media ( max-width: 576px )
+  .main-news
+    &__image-wrapper
+      display: none
+@media ( max-width: 460px )
+  .recent
+    &__items-wrapper
+      grid-template-columns: 1fr
+      gap: 0
