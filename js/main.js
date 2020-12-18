@@ -66,4 +66,32 @@ $(document).ready(function () {
     },
 
   });
+
+  //Обработка формы
+  $('.form').each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Пожалуйста, заполните это поле",
+          minlength: jQuery.validator.format("At least {0} characters required"),
+          maxlength: jQuery.validator.format("You have exceeded the maximum length of {0} characters")
+        },
+        email: {
+          required: "Пожалуйста, заполните это поле",
+          email: "Ваш email должен быть в формате name@domain.com"
+        },
+        phone: {
+          required: "Пожалуйста, заполните это поле",
+          maxlength: "Неверный формат",
+          minlength: "Неверный формат"
+        },
+        message: {
+          required: "Пожалуйста, заполните это поле",
+          minlength: jQuery.validator.format("At least {0} characters required"),
+        }
+      }
+    });
+  });
+
 });

@@ -1,9 +1,16 @@
 @media (min-width: 992px)
+  .button
+    &:hover
+      background-color: lighten($button-primary-color, 10%)
   .logo
     &__title
       transition: 0.5s
       &:hover
         color: $button-primary-color
+    &__image
+      transition: 0.5s
+      &:hover
+        filter: grayscale(100%)
   .navbar
     &__link
       transition: 0.2s
@@ -39,19 +46,14 @@
       transition: 0.3s
       &:hover
         filter: grayscale(100%)
+      &--ig
+        &:hover
+          filter: brightness(300%)
   .tags
     &__item
       transition: 0.3s
       &:hover
         background-color: rgba(61,196,126,0.3)
-  // .bookmark
-  //   transition: 0.2s
-  //   &:hover
-  //     background: url('../img/Bookmark.svg')
-  //   &--active
-  //     &:hover
-  //       background: url('../img/Bookmark-inactive.svg')
-
   .main-news
     &__item
       &:hover
@@ -72,3 +74,51 @@
       &:hover
         & .recent__title
           color: $button-primary-color
+
+  .articles
+    &__item
+      &--small
+        &:hover
+          background-color: #D1E2EB
+    &__main-title
+      transition: 0.3s
+      &:hover
+        color: #D1E2EB
+    &__title
+      transition: 0.3s
+      &:hover
+        color: $color-light
+  .footer
+    &__logo
+      &:hover
+        filter:
+  .footer-menu
+    &__list
+      &--red
+        & .footer-menu__link
+          &:hover
+            color: #FF4F52
+      &--violet
+        & .footer-menu__link
+          &:hover
+            color: #AC8EE3
+      &--blue
+        & .footer-menu__link
+          &:hover
+            color: #4592FF
+      &--orange
+        & .footer-menu__link
+          &:hover
+            color: #FFA34D
+      &--green
+        & .footer-menu__link
+          &:hover
+            color: #3DC47E
+      &--grey
+        & .footer-menu__link
+          &:hover
+            color: #6E99AE
+  .footer-contacts
+    &__link
+      &:hover
+        color: #4592FF

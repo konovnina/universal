@@ -30,7 +30,12 @@ button, input, textarea
   outline: none
   border: none
   cursor: pointer
-
+.invalid
+  display: block
+  font-size: 10px
+  color: red
+  padding-left: 5px
+  padding-top: 3px
 .button
   display: flex
   align-items: center
@@ -42,8 +47,6 @@ button, input, textarea
   line-height: 20px
   color: $color-light
   transition: 0.2s
-  &:hover
-    background-color: lighten($button-primary-color, 10%)
   &__number
     font-weight: normal
     font-size: 14px

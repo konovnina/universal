@@ -1,0 +1,54 @@
+@media ( max-width: 1200px )
+  .articles
+    &__secondary-wrapper
+      width: 60%
+@media ( max-width: 992px )
+  .articles
+    padding-top: 30px
+    padding-bottom: 30px
+    &-grid
+      grid-template-columns: 1fr
+      grid-template-rows: minmax(450px, min-content) min-content
+      gap: 15px
+    &-left-wrapper
+      grid-column: 1/2
+      grid-row: 1/2
+    &-right-wrapper
+      grid-column: 1/2
+      grid-row: 2/3
+      grid-template-rows: minmax(270px, min-content) minmax(170px, min-content)
+      gap: 15px
+    &__secondary
+      background: url('../img/articles/image-169.png') no-repeat 90% 60%, #B4D1E0 url('../img/articles/Oval.svg') no-repeat 90% 60%
+    &__main-title
+      font-size: 36px
+      line-height: 44px
+@media ( max-width: 767px )
+  .articles
+    &-grid
+      grid-template-rows: minmax(400px, min-content) min-content
+    &__main-title
+      font-size: 24px
+      line-height: 30px
+@media ( max-width: 576px )
+  .articles
+    &__author
+      margin-bottom: 10px
+    &__main-title
+      margin-bottom: 20px
+    &-right-wrapper
+      grid-template-columns: 1fr
+      grid-template-rows: minmax(300px, min-content) minmax(170px, min-content)  minmax(170px, min-content)
+    &__secondary-wrapper
+      grid-row: 1/2
+      padding-right: 35px
+    &__secondary
+      grid-column: 1/2
+@media ( max-width: 480px )
+  .articles
+    &__secondary-wrapper
+      grid-row: 1/2
+      padding-right: 35px
+      width: 100%
+    &__secondary
+      background: #B4D1E0 url('../img/articles/Oval.svg') no-repeat 50% 50%

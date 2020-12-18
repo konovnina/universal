@@ -1,0 +1,123 @@
+.footer
+  padding: 60px 0 55px 0
+  background-color: $color-light
+  &__newsletter
+    margin-bottom: 70px
+  &__logo
+    width: 50px
+    height: 50px
+.newsletter
+  display: flex
+  flex-direction: column
+  align-items: center
+  &__title
+    margin-bottom: 25px
+    font-family: Roboto Slab
+    font-style: normal
+    font-weight: bold
+    font-size: 40px
+    line-height: 50px
+    text-align: center
+  &__subscribe
+    display: flex
+    justify-content: center
+    align-items: flex-start
+.subscribe
+  &__input-group
+    width: 313px
+    height: 40px
+    margin-right: 10px
+  &__input
+    width: 100%
+    height: 100%
+    padding: 10px 15px
+    border-radius: 5px
+    border: 1px solid #D9DADB
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: $text-color
+    &::placeholder
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+  &__button
+    padding-left: 25px
+    padding-right: 25px
+
+.footer-menu
+  margin-bottom: 64px
+  display: flex
+  &__list
+    flex: 1
+    padding-top: 30px
+    &--red
+      border-top: 5px solid #FF4F52
+    &--violet
+      border-top: 5px solid #AC8EE3
+    &--blue
+      border-top: 5px solid #4592FF
+    &--orange
+      border-top: 5px solid #FFA34D
+    &--green
+      border-top: 5px solid #3DC47E
+    &--grey
+      flex: 0
+      min-width: 165px
+      border-top: 5px solid #6E99AE
+  &__title
+    margin-bottom: 24px
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+  &__item
+    &:not(:last-child)
+      margin-bottom: 14px
+  &__link
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    transition: 0.3s
+
+.footer-contacts
+  border-top: 1px solid #D9DADB
+  border-bottom: 1px solid #D9DADB
+  padding: 30px 0 30px 0
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &__menu
+    min-width: 565px
+    display: flex
+    justify-content: space-between
+  &__list
+    display: flex
+    align-items: center
+    justify-content: space-between
+    min-width: 485px
+  &__link
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    letter-spacing: 0.5px
+    color: $color-dark
+    transition: 0.3s
+    text-transform: uppercase
+  &__social
+    justify-content: space-between
+    width: 205px
+    padding: 0
+    min-width: 18%
+
+.footer-bottom
+  padding-top: 40px
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  &__info, &__copyright
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: #939699
+  &__info
+    width: 66%

@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Universal</title>
+  <title>Universal – полезные материалы о веб-разработке</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/lato.css">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
-
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -19,7 +19,7 @@
     <div class="container">
       <nav class="navbar">
         <a href="index.html" class="logo header__logo">
-          <img src="img/logo.svg " alt="Icon: logo" class="logo__image">
+          <img src="img/logo.svg " alt="Icon: logo">
           <h1 class="logo__title">Universal</h1>
         </a>
         <!-- /.logo -->
@@ -610,7 +610,7 @@
   <section class="articles">
     <div class="container">
       <div class="articles-grid">
-        <div class="swiper-container articles-slider articles__left-wrapper">
+        <div class="swiper-container articles-slider articles-left-wrapper">
 
           <!-- Slider -->
           <div class="swiper-wrapper">
@@ -642,7 +642,9 @@
               <strong class="author__name">Оксана Пушкина</strong>
               <span class="author__job">Фотограф</span>
             </div>
-            <h2 class="articles__main-title">Выбор читателей: где удобнее работать фрилансеру</h2>
+            <a href="#" class="articles__link">
+              <h2 class="articles__main-title">Выбор читателей: где удобнее работать фрилансеру</h2>
+            </a>
             <button class="button">
               <img src="img/articles/Images.svg" alt="" class="button__left-icon">
               Смотреть фото
@@ -656,7 +658,9 @@
           <div class="tile articles__item articles__secondary">
             <div class="articles__secondary-wrapper">
               <span class="topic-tag topic-tag--career">Карьера</span>
-              <h3 class="articles__title">Вопросы на собеседовании для джуна</h3>
+              <a href="#" class="articles__link">
+                <h3 class="articles__title">Вопросы на собеседовании для джуна</h3>
+              </a>
               <p class="articles__description">Каверзные и не очень вопросы, которых боятся новички, когда идут на
                 собеседование</p>
               <button class="button">
@@ -667,7 +671,7 @@
           </div>
           <!-- /.articles__item -->
 
-          <a class="tile articles__item">
+          <a class="tile articles__item articles__item--small">
             <h5 class="tile__title ">Зарядка для глаз</h5>
             <p class="tile__description">Эти несколько упражнений помогут сохранить зрение. Можно делать их даже если...
             </p>
@@ -675,7 +679,7 @@
           </a>
           <!-- /.articles__item -->
 
-          <a class="tile articles__item">
+          <a class="tile articles__item articles__item--small">
             <h5 class="tile__title">Топ плагинов jQuery</h5>
             <p class="tile__description">Какие плагины помогут быстро создать галерею, выпадающие списки или окна</p>
             <span class="tile__date">14 октября</span>
@@ -690,9 +694,143 @@
   </section>
   <!-- /.articles -->
 
+  <footer class="footer">
+    <div class="container">
+      <section class="newsletter footer__newsletter">
+        <h2 class="newsletter__title">
+          Подпишитесь на нашу рассылку
+        </h2>
+        <form action="send.php" method="POST" class="form subscribe newsletter__subscribe">
+          <div class="subscribe__input-group">
+            <input type="email" class="subscribe__input" placeholder="Email" name="email" required>
+          </div>
+          <input type="hidden" name="form_name" value="newsletter">
+          <button class="button subscribe__button">
+            Подписаться
+          </button>
+        </form>
+      </section>
+      <!-- /.newsletter -->
+
+      <nav class="footer-menu">
+        <div class="footer-menu__list footer-menu__list--red">
+          <h6 class="footer-menu__title">Новости</h6>
+          <ul class="footer-menu__links">
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Обновления</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Экспресс</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Politics</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Solar Eclipse</a></li>
+          </ul>
+        </div>
+        <!-- /.footer-menu__list -->
+
+        <div class="footer-menu__list footer-menu__list--violet">
+          <h6 class="footer-menu__title">Статьи</h6>
+          <ul class="footer-menu__links">
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">HTML</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">CSS</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">JavaScript</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Web Design</a></li>
+          </ul>
+        </div>
+        <!-- /.footer-menu__list -->
+
+        <div class="footer-menu__list footer-menu__list--blue">
+          <h6 class="footer-menu__title">Видеоуроки</h6>
+          <ul class="footer-menu__links">
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Скринкасты</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Уроки</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Вебинары</a></li>
+          </ul>
+        </div>
+        <!-- /.footer-menu__list -->
+
+        <div class="footer-menu__list footer-menu__list--orange">
+          <h6 class="footer-menu__title">Курсы</h6>
+          <ul class="footer-menu__links">
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Платные интенсивы</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Бесплатные стримы</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Мастер-классы</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Менторство</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Буткемпы</a></li>
+          </ul>
+        </div>
+        <!-- /.footer-menu__list -->
+
+        <div class="footer-menu__list footer-menu__list--green">
+          <h6 class="footer-menu__title">Информация</h6>
+          <ul class="footer-menu__links">
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Политика данных</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Оферта сайта</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Реквизиты</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Контакты</a></li>
+          </ul>
+        </div>
+        <!-- /.footer-menu__list -->
+
+        <div class="footer-menu__list footer-menu__list--grey">
+          <h6 class="footer-menu__title">Категории</h6>
+          <ul class="footer-menu__links">
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Популярное</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Горячее</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Подборки</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Мнения</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Карьера</a></li>
+          </ul>
+        </div>
+        <!-- /.footer-menu__list -->
+      </nav>
+      <!-- /.footer__menu -->
+
+      <div class="footer-contacts">
+        <nav class="footer-contacts__menu">
+          <a href="index.html" class="logo footer__logo">
+            <img src="img/logo-invert.svg " alt="Icon: logo" class="logo__image">
+          </a>
+
+          <ul class="footer-contacts__list">
+            <li class="footer-contacts__item">
+              <a href="#" class="footer-contacts__link">Контакты</a>
+            </li>
+            <li class="footer-contacts__item">
+              <a href="#" class="footer-contacts__link">Работа у нас</a>
+            </li>
+            <li class="footer-contacts__item">
+              <a href="#" class="footer-contacts__link">Реклама</a>
+            </li>
+            <li class="footer-contacts__item">
+              <a href="#" class="footer-contacts__link">Обратная связь</a>
+            </li>
+          </ul>
+          <!-- /.footer-contacts__list -->
+        </nav>
+        <!-- /.footer-contacts__menu -->
+        <div class="social__buttons footer-contacts__social">
+          <a class="social__button social__button--fb social__button--sm" href="https://www.facebook.com/"></a>
+          <a class="social__button social__button--twitter social__button--sm" href="https://twitter.com/"></a>
+          <a class="social__button social__button--yt social__button--sm" href="https://www.youtube.com/"></a>
+          <a class="social__button social__button--ig social__button--sm" href="https://www.instagram.com/"></a>
+        </div>
+      </div>
+      <!-- /.footer-contacts -->
+
+      <div class="footer-bottom">
+        <p class="footer-bottom__info">Universal – это онлайн издание, в котором мы публикуем полезные материалы о
+          веб
+          разработке: статьи, новости, видеоуроки,
+          подборки, ссылки и курсы. Материалы на сайте бесплатны, но при копировании, указывайте ссылку.</p>
+        <p class="footer-bottom__copyright">© 2020 Universal Magazine</p>
+      </div>
+      <!-- /.footer__bottom -->
+    </div>
+    <!-- /.container -->
+  </footer>
+  <!-- /.footer -->
+
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/parallax.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
