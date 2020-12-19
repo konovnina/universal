@@ -63,6 +63,7 @@ $(document).ready(function () {
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
+      clickable: true
     },
 
   });
@@ -78,20 +79,55 @@ $(document).ready(function () {
           maxlength: jQuery.validator.format("You have exceeded the maximum length of {0} characters")
         },
         email: {
-          required: "Пожалуйста, заполните это поле",
           email: "Ваш email должен быть в формате name@domain.com"
         },
         phone: {
-          required: "Пожалуйста, заполните это поле",
           maxlength: "Неверный формат",
           minlength: "Неверный формат"
         },
+        checkbox: {
+          required: "Необходимо подтвердить согласие на обработку данных"
+        },
         message: {
-          required: "Пожалуйста, заполните это поле",
-          minlength: jQuery.validator.format("At least {0} characters required"),
+          minlength: jQuery.validator.format("Сообщение должно содержать не менее {0} символов"),
         }
       }
     });
+  });
+
+  //Настройки модального окна
+  var modalButton = $('[data-toggle=modal]');
+  var closeModalButton = $('.modal__close');
+  modalButton.on('click', openModal);
+  closeModalButton.on('click', closeModal);
+
+  function openModal() {
+    var modalOverlay = $('.modal__overlay');
+    var modalDialog = $('.modal__dialog');
+    modalOverlay.addClass('modal__overlay--visible')
+    modalDialog.addClass('modal__dialog--visible')
+  };
+
+  function closeModal(event) {
+    event.preventDefault();
+    var modalOverlay = $('.modal__overlay');
+    var modalDialog = $('.modal__dialog');
+    modalOverlay.removeClass('modal__overlay--visible')
+    modalDialog.removeClass('modal__dialog--visible')
+  };
+
+  document.body.addEventListener('keyup', function (event) {
+    var key = event.keyCode;
+    if (key == 27) {
+      console.log('close modal');
+      closeModal(event);
+    };
+  }, false);
+
+  var checkboxLabel = $(".modal__checkbox-label");
+  checkboxLabel.on('click', function () {
+    $(this).toggleClass('modal__checkbox-label--checked');
+
   });
 
 });
